@@ -18,8 +18,8 @@ app.use('/api/posts', postRoutes);
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)
-  .then(() => console.log("✅ MongoDB Connected Successfully"))
-  .catch(err => console.error("❌ MongoDB Connection Error:", err));
+  .then(() => console.log(" MongoDB Connected Successfully"))
+  .catch(err => console.error(" MongoDB Connection Error:", err));
 
 // Test Route
 app.get('/', (req, res) => {
@@ -27,4 +27,4 @@ app.get('/', (req, res) => {
 });
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`🚀 Server started on port ${PORT}`));
+app.listen(PORT, () => console.log(` Server started on port ${PORT}`));
